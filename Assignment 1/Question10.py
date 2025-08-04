@@ -12,10 +12,7 @@ except ZeroDivisionError:
     print("Error: Cannot divide by zero.")
 except ValueError:
     print("Error: Invalid input. Please enter numbers.")
-
-# Square root
 import math
-
 try:
     number = float(input("Enter a number for square root: "))
     if number < 0:
@@ -24,18 +21,13 @@ try:
     print("Square root:", result)
 except ValueError as e:
     print("Error:", e)
-
-
-# Custom exception
 class AgeVerificationError(Exception):
     pass
-
 def verify_age(age):
     if age < 18:
         raise AgeVerificationError("Too young to vote.")
     else:
         print("Eligible to vote.")
-
 try:
     age = int(input("Enter your age: "))
     verify_age(age)

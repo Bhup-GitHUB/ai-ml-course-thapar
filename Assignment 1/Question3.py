@@ -12,24 +12,12 @@ def check_number():
     else:
         print("Zero")
 
-
 def check_leap_year():
     year = int(input("Enter a year: "))
     if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
         print(f"{year} is a leap year")
     else:
         print(f"{year} is not a leap year")
-
-if __name__ == "__main__":
-    print("Testing number checker:")
-    check_number()
-    
-    print("\nTesting leap year checker:")
-    check_leap_year()
-    
-    print("\nTesting grade calculator:")
-    calculate_grade()
-
 
 def calculate_grade():
     marks = float(input("Enter marks (0-100): "))
@@ -43,3 +31,11 @@ def calculate_grade():
         print("Grade: D")
     else:
         print("Grade: F")
+
+if __name__ == "__main__":
+    print("Testing number checker:")
+    check_number()
+    print("\nTesting leap year checker:")
+    check_leap_year()
+    print("\nTesting grade calculator:")
+    calculate_grade()

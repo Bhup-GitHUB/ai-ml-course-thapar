@@ -3,21 +3,15 @@
 # Create a multiplication table generator.
 # Implement a program to find the sum of all even numbers up to a given limit.
 
-
-
 def print_numbers():
     for i in range(1, 101):
         print(i, end=" ")
-    print()  # for new line
-
-
+    print()
 
 def multiplication_table():
     num = int(input("number"))
     for i in range(1, 11):
         print(f"{num} x {i} = {num * i}")
-
-
 
 def sum_even_numbers():
     limit = int(input("Enter the limit: "))
@@ -29,9 +23,7 @@ def sum_even_numbers():
 if __name__ == "__main__":
     print("Printing numbers from 1 to 100:")
     print_numbers()
-    
     print("\nMultiplication Table Generator:")
     multiplication_table()
-    
     print("\nSum of all even numbers up to a limit:")
     sum_even_numbers() 
